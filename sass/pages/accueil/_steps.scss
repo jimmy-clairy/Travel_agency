@@ -1,0 +1,50 @@
+.steps {
+    padding: 4rem 0 2rem;
+    @include desktop {
+        padding: 5rem 0 2rem;
+    }
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .step {
+        max-width: 18.75rem;
+        padding: 2.5rem 0.5rem 0;
+        margin: 0.6rem auto;
+        background-size: 2.5rem 2.5rem;
+        @include desktop {
+            padding: 5rem 0.5rem 0;
+            background-size: 5rem 5rem;
+        }
+        
+        &__heading {
+            text-transform: uppercase;
+            margin: 0.5rem 0;
+            @include desktop {
+                margin: 1.25rem 0;
+            }
+        }
+
+        &__paragraph {
+            color:$color-secondary;
+            line-height: 1.5rem;
+            @include desktop {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.step-1 {
+    background: url('../pictures/pictures_compressed/steps-icon-1.png') no-repeat top center;
+}
+.step-2 {
+    background: url('../pictures/pictures_compressed/steps-icon-2.png') no-repeat top center;
+}
+.step-3 {
+    background: url('../pictures/pictures_compressed/steps-icon-3.png') no-repeat top center;
+}

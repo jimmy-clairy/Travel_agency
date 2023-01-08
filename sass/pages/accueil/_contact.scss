@@ -1,0 +1,54 @@
+.contact {
+    padding: 4rem 0 2rem;
+    @include desktop {
+        padding: 5rem 0 2rem;
+    }
+    
+    &__heading {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        margin:0 auto;
+        max-width: 25rem;
+        border-bottom: 0.0625rem solid $color-four;
+        padding-bottom:0.625rem ;
+    }
+
+    &__paragraph {
+        color: $color-secondary;
+        padding: 1.5rem 0;
+        max-width: 50rem;
+        margin: auto;
+        line-height: 1.3rem;
+    }
+}
+
+.form {
+    &__input {
+        margin: 0.5rem 0;
+        width: 80%;
+        max-width: 20rem;
+        height: 2.5rem;
+        padding: 0.5rem;
+        font-size: 1.1rem;
+        border-radius: 0.25rem;
+        border: 0.125rem solid $color-five;
+    }
+
+    &__button {
+        margin: 0.5rem 0;
+        width: 80%;
+        max-width: 20rem;
+        height: 2.5rem;
+        padding: 0.5rem;
+        font-size: 1.1rem;
+        border-radius: 0.25rem;
+        border: none;
+        color: $color-white;
+        font-weight: bold;
+        background-color:$color-four;
+        cursor: pointer;
+        &:hover {
+            background-color:$color-primary;
+        } 
+    }
+}

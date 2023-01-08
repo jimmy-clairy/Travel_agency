@@ -1,0 +1,17 @@
+.footer {
+    background-color: $color-primary;
+    padding: 1.25rem;
+    text-align: center;
+    @include desktop {
+        padding: 2.5rem 0;
+    }
+    &__heading {
+        font-size: 1.4rem;
+        color: $color-white;
+    }
+    &__coopyright {
+    font-weight: bold;
+    padding-top: 1.875rem;
+    color: lighten($color-secondary, 20);
+    }   
+}

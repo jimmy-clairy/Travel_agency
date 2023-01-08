@@ -1,0 +1,103 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 3.125rem;
+    width: 100%;
+    display: flex;
+    background-color: darken(rgba(255, 255, 255), 1);
+    @include desktop {
+        min-height: 5rem;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__heading {
+        font-family: 'Crete Round',sans-serif;
+        font-size: 1.7rem;
+        @include desktop {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__nav {
+        @media screen and (max-width:900px) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: $color-white;
+            width: 100%;
+            min-height: 30vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 1.25rem 2.5rem;
+            border-bottom: 0.0625rem solid $color-primary;
+            transform: translateY(-100%);
+            transition: transform 0.4s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+        }
+
+        &.active {
+            transform: translateY(0);
+        }
+        
+        a {
+            color: $color-primary;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin: 0.625rem;
+            transition: 0.3s;
+            @include desktop {
+                margin: 0.625rem 0px 0.625rem 1.25rem;
+            }
+            &:hover {
+                color: $color-four;
+            }
+        }
+    }
+
+    &__btn-toggle {
+        position: relative;
+        z-index: 10;
+        height: 2.8125rem;
+        width: 2.8125rem;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        @include desktop {
+            display: none;
+        }
+
+        .line {
+            position: absolute;
+            width: 100%;
+            height: 0.1875rem;
+            background: $color-primary;
+            transition: transform 0.3s ease-out, opacity 0.1s ease-out;
+        }
+        .l1 {
+            transform: translateY(-0.625rem);
+        }
+        .l3 {
+            transform: translateY(0.625rem);
+        }
+    
+        &.active .l1 {
+            transform: translateY(0) rotate(135deg);
+        }
+        &.active .l2 {
+            opacity: 0;
+        }
+        &.active .l3 {
+            transform: translateY(0) rotate(-135deg);
+        }
+    }
+}

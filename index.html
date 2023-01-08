@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+    <link href="pictures/steps-icon-3.png" type="picture/png" rel="icon">
+    <meta name="description" content="Agence de voyage. Confiez-nous vos rêves d'évasion: en famille ou entre amis, nous trouverons la formule qui comblera vos attentes.">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__heading"><a href="#">Travel Agency<span class="orange">.</span></a></h1>
+
+            <nav class="header__nav"> 
+                <a href="#main-image">Accueil</a>
+                <a href="#steps">Etapes</a>
+                <a href="#possibilities">Circuits</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <button class="header__btn-toggle" aria-label="toggle curtain navigation">
+                <span class="line l1"></span>
+                <span class="line l2"></span>
+                <span class="line l3"></span>
+            </button>
+
+        </div>
+    </header>
+
+    <div id="main-image" class="main-image">
+        <h2 class="main-image__heading">Organisez votre<br><strong>voyage sur mesure</strong></h2>
+        <a href="#" class="main-image__button">Par ici</a>
+    </div>
+
+    <div id="steps" class="steps">
+        <div class="container">
+            <div class="step step-1">
+                <h3 class="step__heading">Planifier</h3>
+                <p class="step__paragraph">Confiez-nous vos rêves d'évasion: en famille ou entre amis, nous trouverons la formule qui comblera vos attentes.</p>
+            </div>
+            <div class="step step-2">
+                <h3 class="step__heading">Organisez</h3>
+                <p class="step__paragraph">Bénéficiez de l'expertise de nos spécialistes de chaque destination, ils vous accompagnent dans la réalisation de votre voyage.</p>
+            </div>
+            <div class="step step-3">
+                <h3 class="step__heading">voyager</h3>
+                <p class="step__paragraph">Nous nous chargeons d'assurer votre sécurité et de veiller à votre pleine sérénité tout au long de votre voyage.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="possibilities" class="possibilities">
+        <div class="container">
+            <article class="article article-1">
+                <div class="article__overlay">
+                    <h3 class="article__heading">Partez en famille</h3>
+                    <p class="article__paragraph">Offrez le meilleur à ceux que vous aimez et partagez des moments fabuleux!</p>
+                    <a href="#" class="article__button">Plus d'infos</a>
+                </div>
+            </article>
+
+            <article class="article article-2">
+                <div class="article__overlay">
+                    <h3 class="article__heading">Envie de s'évader</h3>
+                    <p class="article__paragraph">Parfois un peu d'évasion serait la bienvenue et ferait le plus grand bien!</p>
+                    <a href="#" class="article__button">Plus d'infos</a>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div id="contact" class="contact">
+        <div class="container">
+            <h4 class="contact__heading">Contactez-nous</h4>
+            <p class="contact__paragraph">Chez Travel Agency nous savons que voyager est une aventure humaine 
+                mais également un engagement financier important pour vous.<br><br>
+                C'est pourquoi nous mettons un point d'honneur à prendre en compte chacune de vos attentes 
+                pour vous aider dans la préparation de votre séjour, circuit ou voyage sur mesure.</p>
+                
+            <form class="form">
+                <!-- <label for="name">Nom</label> -->
+                <input class="form__input" type="text" id="name" placeholder="Votre nom">
+
+                <!-- <label for="email">Email</label> -->
+                <input class="form__input" type="text" id="email" placeholder="Votre email">
+
+                <button class="form__button" type="submit" value="ok">OK</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <h5 class="footer__heading">Create by Jimmy<span class="orange">.</span></h5>
+        <div class="footer__coopyright">Copyright © 2021. Tous droits réservés. </div>
+    </footer>
+</body>
+</html>
