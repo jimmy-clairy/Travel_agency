@@ -15,17 +15,7 @@
     }
     }
 
-    &__button {
-        width: fit-content;
-        padding: 0.5rem;
-        background:$color-three;
-        color: $color-white;
-        border-radius: 0.3125rem;
-        @include desktop {
-            font-size: 1.3rem;
-        }
-    &:hover {
-        background:$color-four;
-    }    
+    .btn {
+        font-size: 1.5rem;
     }
 }

@@ -34,6 +34,18 @@ html {
   color: #fa7a00;
 }
 
+.btn {
+  background: #fa7a00;
+  padding: 0.5rem;
+  color: white;
+  border-radius: 0.3125rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+.btn:hover {
+  background: #02b8dd;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -151,6 +163,9 @@ html {
 .footer__heading {
   font-size: 1.4rem;
   color: white;
+  font-family: "Crete Round", sans-serif;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
 }
 .footer__coopyright {
   font-weight: bold;
@@ -178,20 +193,8 @@ html {
     padding: 5rem 0 3rem 0;
   }
 }
-.main-image__button {
-  width: fit-content;
-  padding: 0.5rem;
-  background: #fa7a00;
-  color: white;
-  border-radius: 0.3125rem;
-}
-@media screen and (min-width: 901px) {
-  .main-image__button {
-    font-size: 1.3rem;
-  }
-}
-.main-image__button:hover {
-  background: #02b8dd;
+.main-image .btn {
+  font-size: 1.5rem;
 }
 
 .steps {
@@ -294,17 +297,6 @@ html {
 .possibilities .article__paragraph {
   color: #777;
   padding: 0.5rem 0;
-}
-.possibilities .article__button {
-  color: white;
-  background-color: #fa7a00;
-  width: fit-content;
-  margin: 0 auto;
-  padding: 0.4rem;
-  border-radius: 0.4rem;
-}
-.possibilities .article__button:hover {
-  background-color: #02b8dd;
 }
 .possibilities .article-1 {
   background: url("../pictures/pictures_compressed/article-image-1.webp") center/cover;

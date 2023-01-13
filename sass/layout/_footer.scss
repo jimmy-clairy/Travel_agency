@@ -5,10 +5,15 @@
     @include desktop {
         padding: 2.5rem 0;
     }
+
     &__heading {
         font-size: 1.4rem;
         color: $color-white;
+        font-family: 'Crete Round',sans-serif;
+        letter-spacing: 0.2rem;
+        font-weight: 500;
     }
+    
     &__coopyright {
     font-weight: bold;
     padding-top: 1.875rem;
