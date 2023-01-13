@@ -9,8 +9,8 @@
         text-transform: uppercase;
         margin:0 auto;
         max-width: 25rem;
-        border-bottom: 0.0625rem solid $color-four;
-        padding-bottom:0.625rem ;
+        border-bottom: 1px solid $color-four;
+        padding-bottom:1rem;
     }
 
     &__paragraph {
@@ -30,8 +30,8 @@
         height: 2.5rem;
         padding: 0.5rem;
         font-size: 1.1rem;
-        border-radius: 0.25rem;
-        border: 0.125rem solid $color-five;
+        border-radius: 4px;
+        border: 2px solid $color-five;
     }
 
     &__button {
@@ -41,7 +41,7 @@
         height: 2.5rem;
         padding: 0.5rem;
         font-size: 1.1rem;
-        border-radius: 0.25rem;
+        border-radius: 4px;
         border: none;
         color: $color-white;
         font-weight: bold;

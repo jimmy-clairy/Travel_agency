@@ -6,6 +6,7 @@ html {
     color: $color-primary;
     user-select: none;
     text-align: center;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -23,10 +24,14 @@ html {
     background:$color-three;
     padding: 0.5rem;
     color: $color-white;
-    border-radius: 0.3125rem;
-    width: fit-content;
+    border-radius: 4px;
     margin: 0 auto;
     &:hover {
         background:$color-four;
     }
+}
+
+.btn--font-big {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
 }

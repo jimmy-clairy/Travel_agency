@@ -8,14 +8,10 @@
     &__heading {
     font-weight: normal;
     text-transform: uppercase;
-    padding: 3rem 0 1.87rem 0;
+    padding: 3rem 0 1.87rem;
     @include desktop {
         font-size: 3rem;
-        padding: 5rem 0 3rem 0;
+        padding: 5rem 0 3rem;
     }
-    }
-
-    .btn {
-        font-size: 1.5rem;
     }
 }
