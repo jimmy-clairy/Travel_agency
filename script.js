@@ -1,5 +1,5 @@
-const hamburgerButton = document.querySelector(".header__btn-toggle")
-const navigation = document.querySelector(".header__nav")
+const hamburgerButton = document.querySelector(".btn-toggle")
+const navigation = document.querySelector(".nav")
 
 hamburgerButton.addEventListener("click", toggleNav)
 

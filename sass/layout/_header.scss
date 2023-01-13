@@ -24,7 +24,7 @@
         }
     }
 
-    &__nav {
+    .nav {
         @media screen and (max-width:900px) {
             position: absolute;
             top: 0;
@@ -46,7 +46,7 @@
             transform: translateY(0);
         }
         
-        a {
+        &__link {
             color: $color-primary;
             font-size: 1.3rem;
             font-weight: 700;
@@ -61,7 +61,7 @@
         }
     }
 
-    &__btn-toggle {
+    .btn-toggle {
         position: relative;
         z-index: 10;
         height: 2.8125rem;

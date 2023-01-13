@@ -63,7 +63,7 @@ html {
   }
 }
 @media screen and (max-width: 900px) {
-  .header__nav {
+  .header .nav {
     position: absolute;
     top: 0;
     left: 0;
@@ -80,10 +80,10 @@ html {
     transition: transform 0.4s cubic-bezier(0.73, 0.11, 0.67, 0.84);
   }
 }
-.header__nav.active {
+.header .nav.active {
   transform: translateY(0);
 }
-.header__nav a {
+.header .nav__link {
   color: #444;
   font-size: 1.3rem;
   font-weight: 700;
@@ -91,14 +91,14 @@ html {
   transition: 0.3s;
 }
 @media screen and (min-width: 901px) {
-  .header__nav a {
+  .header .nav__link {
     margin: 0.625rem 0px 0.625rem 1.25rem;
   }
 }
-.header__nav a:hover {
+.header .nav__link:hover {
   color: #02b8dd;
 }
-.header__btn-toggle {
+.header .btn-toggle {
   position: relative;
   z-index: 10;
   height: 2.8125rem;
@@ -111,30 +111,30 @@ html {
   background: transparent;
 }
 @media screen and (min-width: 901px) {
-  .header__btn-toggle {
+  .header .btn-toggle {
     display: none;
   }
 }
-.header__btn-toggle .line {
+.header .btn-toggle .line {
   position: absolute;
   width: 100%;
   height: 0.1875rem;
   background: #444;
   transition: transform 0.3s ease-out, opacity 0.1s ease-out;
 }
-.header__btn-toggle .l1 {
+.header .btn-toggle .l1 {
   transform: translateY(-0.625rem);
 }
-.header__btn-toggle .l3 {
+.header .btn-toggle .l3 {
   transform: translateY(0.625rem);
 }
-.header__btn-toggle.active .l1 {
+.header .btn-toggle.active .l1 {
   transform: translateY(0) rotate(135deg);
 }
-.header__btn-toggle.active .l2 {
+.header .btn-toggle.active .l2 {
   opacity: 0;
 }
-.header__btn-toggle.active .l3 {
+.header .btn-toggle.active .l3 {
   transform: translateY(0) rotate(-135deg);
 }
 
