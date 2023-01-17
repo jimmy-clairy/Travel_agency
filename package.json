@@ -1,0 +1,21 @@
+{
+  "name": "travel_agency",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style compressed",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimmy-clairy/Travel_agency.git"
+  },
+  "browserslist": "last 4 versions",
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jimmy-clairy/Travel_agency/issues"
+  },
+  "homepage": "https://github.com/jimmy-clairy/Travel_agency#readme"
+}
