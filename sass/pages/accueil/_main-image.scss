@@ -1,17 +1,14 @@
 .main-image {
-    padding: 3rem 0;
-    background:url('../pictures/pictures_compressed/main.webp') center/cover;
-    @include desktop {
-        padding: 8rem 0;
-    }
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url('../pictures/pictures_compressed/main.webp') center/cover;
 
     &__heading {
-    font-weight: normal;
-    text-transform: uppercase;
-    padding: 3rem 0 1.87rem;
-    @include desktop {
-        font-size: 3rem;
-        padding: 5rem 0 3rem;
-    }
+        font-weight: normal;
+        text-transform: uppercase;
+        padding: 3rem 0;
+        font-size: clamp(24px, 6vw, 50px);
     }
 }
