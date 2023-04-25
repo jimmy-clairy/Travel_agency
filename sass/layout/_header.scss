@@ -1,14 +1,10 @@
 .header {
     position: fixed;
+    z-index: 100;
     top: 0;
-    left: 0;
-    min-height: 3rem;
     width: 100%;
-    display: flex;
-    background-color: darken(rgba(255, 255, 255), 1);
-    @include desktop {
-        min-height: 5rem;
-    }
+    background-color: #fff;
+    height: 8rem;
 
     .container {
         display: flex;
@@ -17,89 +13,15 @@
     }
 
     &__heading {
-        font-family: 'Crete Round',sans-serif;
-        font-size: 1.7rem;
-        @include desktop {
-            font-size: 2.5rem;
-        }
+        font-family: 'Crete Round', sans-serif;
     }
 
     .nav {
-        @media screen and (max-width:900px) {
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: $color-white;
-            width: 100%;
-            min-height: 30vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            padding: 1.25rem 2.5rem;
-            border-bottom: 1px solid $color-primary;
-            transform: translateY(-100%);
-            opacity: 0;
-            transition: all 0.4s cubic-bezier(0.73, 0.11, 0.67, 0.84);
-        }
+        display: none;
 
-        &.active {
-            transform: translateY(0);
-            opacity: 1;
-        }
-        
-        &__link {
-            color: $color-primary;
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin: 0.625rem;
-            transition: 0.3s;
-            @include desktop {
-                margin: 0.625rem 0px 0.625rem 1.25rem;
-            }
-            &:hover {
-                color: $color-four;
-            }
-        }
-    }
-
-    .btn-toggle {
-        position: relative;
-        z-index: 10;
-        height: 2.5rem;
-        width: 2.5rem;
-        border: none;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: transparent;
         @include desktop {
-            display: none;
-        }
-
-        .line {
-            position: absolute;
-            width: 100%;
-            height: 0.2rem;
-            background: $color-primary;
-            transition: transform 0.3s ease-out, opacity 0.1s ease-out;
-        }
-        .l1 {
-            transform: translateY(-0.625rem);
-        }
-        .l3 {
-            transform: translateY(0.625rem);
-        }
-    
-        &.active .l1 {
-            transform: translateY(0) rotate(135deg);
-        }
-        &.active .l2 {
-            opacity: 0;
-        }
-        &.active .l3 {
-            transform: translateY(0) rotate(-135deg);
+            display: flex;
+            gap: 2rem;
         }
     }
 }

@@ -1,6 +1,6 @@
 const hamburgerButton = document.querySelector(".btn-toggle")
-const navigation = document.querySelector(".nav")
-const navLink = document.querySelectorAll(".nav__link")
+const navigation = document.querySelector(".nav-slider")
+const navLink = document.querySelectorAll(".nav-slider a")
 console.log(navLink);
 
 hamburgerButton.addEventListener("click", toggleNav)

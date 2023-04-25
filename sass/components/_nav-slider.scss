@@ -1,0 +1,71 @@
+.btn-toggle {
+    position: relative;
+    height: 3.5rem;
+    width: 3.5rem;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+
+    @include desktop {
+        display: none;
+    }
+
+    .line {
+        position: absolute;
+        width: 100%;
+        height: 0.2rem;
+        background: $color-primary;
+        transition: transform 0.3s ease-out, opacity 0.1s ease-out;
+    }
+
+    .l1 {
+        transform: translateY(-1rem);
+    }
+
+    .l3 {
+        transform: translateY(1rem);
+    }
+
+    &.active .l1 {
+        transform: translateY(0) rotate(135deg);
+    }
+
+    &.active .l2 {
+        opacity: 0;
+    }
+
+    &.active .l3 {
+        transform: translateY(0) rotate(-135deg);
+    }
+}
+
+.nav-slider {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10rem 2rem 2rem;
+    border-bottom: 1px solid $color-primary;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+
+    @include desktop {
+        display: none;
+    }
+
+    &.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

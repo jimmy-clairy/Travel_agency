@@ -1,37 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 html {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    color: $color-primary;
+    font-size: 62.5%;
     user-select: none;
-    text-align: center;
     scroll-behavior: smooth;
 }
 
-.container {
-    max-width: 62.5rem;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 1.25rem;
+body {
+    font-size: 1.6em;
+    text-align: center;
+    color: $color-primary;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .orange {
     color: $color-three;
 }
 
-.btn {
-    background:$color-three;
-    padding: 0.5rem;
-    color: $color-white;
-    border-radius: 4px;
-    margin: 0 auto;
-    &:hover {
-        background:$color-four;
-    }
+.container {
+    width: 90%;
+    max-width: 120rem;
+    margin: auto;
 }
 
-.btn--font-big {
-    font-size: 1.2rem;
-    padding: 0.5rem 1rem;
+nav a {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 1.2rem;
+    transition: 0.3s;
+
+    &:hover {
+        color: $color-four;
+    }
 }

@@ -1,0 +1,13 @@
+.btn {
+    background: $color-three;
+    padding: 1rem 1.5rem;
+    color: $color-white;
+    border-radius: 4px;
+    margin: 0 auto;
+    font-size: 2rem;
+    transition: .3s;
+
+    &:hover {
+        background: $color-four;
+    }
+}

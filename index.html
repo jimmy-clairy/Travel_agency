@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,8 @@
     <title>Travel Agency</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="script.js" defer></script>
-    <meta name="description" content="Agence de voyage. Confiez-nous vos rêves d'évasion: en famille ou entre amis, nous trouverons la formule qui comblera vos attentes.">
+    <meta name="description"
+        content="Agence de voyage. Confiez-nous vos rêves d'évasion: en famille ou entre amis, nous trouverons la formule qui comblera vos attentes.">
     <link rel="icon" type="image/png" href="pictures/J.png">
 </head>
 
@@ -16,12 +18,13 @@
         <div class="container">
             <h1 class="header__heading"><a href="#">Travel Agency<span class="orange">.</span></a></h1>
 
-            <nav class="nav"> 
-                <a class="nav__link" href="#main-image">Accueil</a>
-                <a class="nav__link" href="#steps">Etapes</a>
-                <a class="nav__link" href="#possibilities">Circuits</a>
-                <a class="nav__link" href="#contact">Contact</a>
+            <nav class="nav">
+                <a href="#main-image">Accueil</a>
+                <a href="#steps">Etapes</a>
+                <a href="#possibilities">Circuits</a>
+                <a href="#contact">Contact</a>
             </nav>
+
 
             <button class="btn-toggle" aria-label="toggle curtain navigation">
                 <span class="line l1"></span>
@@ -32,6 +35,13 @@
         </div>
     </header>
 
+    <nav class="nav-slider">
+        <a href="#main-image">Accueil</a>
+        <a href="#steps">Etapes</a>
+        <a href="#possibilities">Circuits</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <div id="main-image" class="main-image">
         <h2 class="main-image__heading">Organisez votre<br><strong>voyage sur mesure</strong></h2>
         <a href="#" class="btn btn--font-big">Par ici</a>
@@ -39,17 +49,23 @@
 
     <div id="steps" class="steps">
         <div class="container">
-            <div class="step step-1">
+            <div class="step">
+                <img src="../pictures/pictures_compressed/steps-icon-1.png" width="80" height="80" alt="icon">
                 <h3 class="step__heading">Planifier</h3>
-                <p class="step__paragraph">Confiez-nous vos rêves d'évasion: en famille ou entre amis, nous trouverons la formule qui comblera vos attentes.</p>
+                <p class="step__paragraph">Confiez-nous vos rêves d'évasion: en famille ou entre amis, nous trouverons
+                    la formule qui comblera vos attentes.</p>
             </div>
-            <div class="step step-2">
+            <div class="step">
+                <img src="../pictures/pictures_compressed/steps-icon-2.png" width="80" height="80" alt="icon">
                 <h3 class="step__heading">Organisez</h3>
-                <p class="step__paragraph">Bénéficiez de l'expertise de nos spécialistes de chaque destination, ils vous accompagnent dans la réalisation de votre voyage.</p>
+                <p class="step__paragraph">Bénéficiez de l'expertise de nos spécialistes de chaque destination, ils vous
+                    accompagnent dans la réalisation de votre voyage.</p>
             </div>
-            <div class="step step-3">
+            <div class="step">
+                <img src="../pictures/pictures_compressed/steps-icon-3.png" width="80" height="80" alt="icon">
                 <h3 class="step__heading">voyager</h3>
-                <p class="step__paragraph">Nous nous chargeons d'assurer votre sécurité et de veiller à votre pleine sérénité tout au long de votre voyage.</p>
+                <p class="step__paragraph">Nous nous chargeons d'assurer votre sécurité et de veiller à votre pleine
+                    sérénité tout au long de votre voyage.</p>
             </div>
         </div>
     </div>
@@ -59,7 +75,8 @@
             <article class="article article-1">
                 <div class="article__overlay">
                     <h3 class="article__heading">Partez en famille</h3>
-                    <p class="article__paragraph">Offrez le meilleur à ceux que vous aimez et partagez des moments fabuleux!</p>
+                    <p class="article__paragraph">Offrez le meilleur à ceux que vous aimez et partagez des moments
+                        fabuleux!</p>
                     <a href="#" class="btn">Plus d'infos</a>
                 </div>
             </article>
@@ -67,7 +84,8 @@
             <article class="article article-2">
                 <div class="article__overlay">
                     <h3 class="article__heading">Envie de s'évader</h3>
-                    <p class="article__paragraph">Parfois un peu d'évasion serait la bienvenue et ferait le plus grand bien!</p>
+                    <p class="article__paragraph">Parfois un peu d'évasion serait la bienvenue et ferait le plus grand
+                        bien!</p>
                     <a href="#" class="btn">Plus d'infos</a>
                 </div>
             </article>
@@ -77,11 +95,11 @@
     <div id="contact" class="contact">
         <div class="container">
             <h4 class="contact__heading">Contactez-nous</h4>
-            <p class="contact__paragraph">Chez Travel Agency nous savons que voyager est une aventure humaine 
+            <p class="contact__paragraph">Chez Travel Agency nous savons que voyager est une aventure humaine
                 mais également un engagement financier important pour vous.<br><br>
-                C'est pourquoi nous mettons un point d'honneur à prendre en compte chacune de vos attentes 
+                C'est pourquoi nous mettons un point d'honneur à prendre en compte chacune de vos attentes
                 pour vous aider dans la préparation de votre séjour, circuit ou voyage sur mesure.</p>
-                
+
             <form class="form">
                 <input class="form__input" type="text" id="name" placeholder="Votre nom">
 
@@ -97,4 +115,5 @@
         <div class="footer__coopyright">Copyright © 2021. Tous droits réservés. </div>
     </footer>
 </body>
+
 </html>
