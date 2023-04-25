@@ -1,48 +1,45 @@
 .possibilities {
-    background-color: lighten($color-five, 10);
-    padding: 4rem 0 2rem;
-
-    @include desktop {
-        padding: 5rem 0 2rem;
-    }
+    background-color: lighten($color-primary, 70);
+    padding: 10rem 0;
 
     .container {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
 
-        @media screen and (min-width:920px) {
+        @include desktop-L {
+            flex-direction: row;
             justify-content: space-between;
         }
     }
 
     .article {
-        max-width: 26.25rem;
-        min-height: 12.5rem;
+        max-width: 50rem;
         border-radius: 0.5rem;
-        margin: 0.5rem auto;
         overflow: hidden;
 
         &__overlay {
-            background: rgba(255, 255, 255, 0.75);
+            background: rgba(255, 255, 255, 0.8);
             height: 100%;
-            width: 45%;
-            padding: 1rem 0.5rem;
+            width: 60%;
+            padding: 1rem;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            @include desktop-L {
+                width: 48%;
+            }
         }
 
         &__heading {
-            border-bottom: 1px solid $color-five;
-            padding-bottom: 0.5rem;
+            border-bottom: 1px solid lighten($color-primary, 40);
+            padding-bottom: 1rem;
+            margin: 1rem 0 0 0;
             text-transform: uppercase;
         }
 
-        &__paragraph {
-            color: $color-secondary;
-            padding: 0.5rem 0;
-        }
     }
 
     .article-1 {

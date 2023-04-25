@@ -1,54 +1,53 @@
 .contact {
-    padding: 4rem 0 2rem;
-    @include desktop {
-        padding: 5rem 0 2rem;
-    }
-    
+    padding: 8rem 0;
+
+
     &__heading {
-        font-size: 1.2rem;
+        margin: 0 auto 4rem auto;
+        font-size: 2rem;
         text-transform: uppercase;
-        margin:0 auto;
-        max-width: 25rem;
+        max-width: 24rem;
         border-bottom: 1px solid $color-four;
-        padding-bottom:1rem;
+        padding-bottom: 1rem;
     }
 
     &__paragraph {
-        color: $color-secondary;
-        padding: 1.5rem 0;
-        max-width: 50rem;
-        margin: auto;
-        line-height: 1.3rem;
+        margin: 2rem auto;
     }
 }
 
 .form {
-    &__input {
-        margin: 0.5rem 0;
-        width: 80%;
-        max-width: 20rem;
-        height: 2.5rem;
-        padding: 0.5rem;
-        font-size: 1.1rem;
+    margin-top: 3rem;
+
+    @include desktop {
+        display: flex;
+        gap: 3rem;
+    }
+
+    &__input,
+    &__button {
+        margin: 1rem 0;
+        width: 100%;
+        max-width: 40rem;
+        padding: 1rem;
+        font-size: 1.8rem;
         border-radius: 4px;
-        border: 2px solid $color-five;
+    }
+
+    &__input {
+        border: 2px solid lighten($color-primary, 30);
     }
 
     &__button {
-        margin: 0.5rem 0;
-        width: 80%;
-        max-width: 20rem;
-        height: 2.5rem;
-        padding: 0.5rem;
-        font-size: 1.1rem;
-        border-radius: 4px;
         border: none;
         color: $color-white;
         font-weight: bold;
-        background-color:$color-four;
+        background-color: $color-four;
         cursor: pointer;
+        transition: .3s;
+
         &:hover {
-            background-color:$color-primary;
-        } 
+            background-color: $color-primary;
+        }
     }
 }

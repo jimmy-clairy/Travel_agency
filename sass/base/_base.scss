@@ -23,12 +23,12 @@ body {
 
 .container {
     width: 90%;
-    max-width: 120rem;
+    max-width: 110rem;
     margin: auto;
 }
 
 nav a {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
     margin: 1.2rem;
     transition: 0.3s;
@@ -36,4 +36,9 @@ nav a {
     &:hover {
         color: $color-four;
     }
+}
+
+p {
+    color: lighten($color-primary, 15);
+    line-height: 2.4rem;
 }

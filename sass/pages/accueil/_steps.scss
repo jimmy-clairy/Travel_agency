@@ -1,25 +1,25 @@
 .steps {
-    padding: 3rem 0;
+    padding: 10rem 0 8.4rem;
 
     .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+
         @include desktop {
-            display: flex;
+            flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 3rem;
         }
     }
 
     .step {
-        margin: 5rem auto;
+        // margin: 5rem auto;
         max-width: 35rem;
 
         &__heading {
             text-transform: uppercase;
-        }
-
-        &__paragraph {
-            color: $color-secondary;
         }
 
         @include desktop {

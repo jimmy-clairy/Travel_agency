@@ -4,7 +4,7 @@
     top: 0;
     width: 100%;
     background-color: #fff;
-    height: 8rem;
+    box-shadow: 0 3px 3px rgba($color-primary, 0.4);
 
     .container {
         display: flex;
@@ -14,6 +14,7 @@
 
     &__heading {
         font-family: 'Crete Round', sans-serif;
+        font-size: clamp(3rem, 5vw, 3.6rem);
     }
 
     .nav {

@@ -1,22 +1,18 @@
 .footer {
     background-color: $color-primary;
-    padding: 1.25rem;
+    padding: 3rem 1rem;
     text-align: center;
-    @include desktop {
-        padding: 2.5rem 0;
-    }
 
     &__heading {
-        font-size: 1.4rem;
+        font-size: clamp(2.5rem, 4vw, 3rem);
         color: $color-white;
-        font-family: 'Crete Round',sans-serif;
+        font-family: 'Crete Round', sans-serif;
         letter-spacing: 0.2rem;
         font-weight: 500;
     }
-    
+
     &__coopyright {
-    font-weight: bold;
-    padding-top: 2rem;
-    color: lighten($color-secondary, 20);
-    }   
+        font-weight: bold;
+        color: lighten($color-primary, 30);
+    }
 }
